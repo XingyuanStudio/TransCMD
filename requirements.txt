@@ -1,0 +1,20 @@
+# 基础依赖
+pyperclip>=1.8.2    # 剪贴板操作
+
+# 腾讯云翻译依赖
+tencentcloud-sdk-python>=3.0.1    # 腾讯云SDK
+
+# 本地模型翻译依赖
+ollama>=0.1.1    # Ollama客户端
+
+# 日志系统依赖
+python-json-logger>=2.0.7    # JSON格式日志支持
+
+# 类型检查支持
+typing-extensions>=4.5.0    # 类型提示扩展
+mypy>=1.0.0    # 类型检查工具
+
+# 开发工具（可选）
+black>=22.3.0    # 代码格式化
+isort>=5.10.1    # import语句排序
+pylint>=2.15.0   # 代码质量检查 
