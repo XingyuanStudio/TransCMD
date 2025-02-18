@@ -35,7 +35,6 @@ if __name__ == "__main__":
         text="Hello, world！",
         # source_lang="en",
         # target_lang="zh",
-        secret_id="AKIDWs24uYN8pQp3CCyVowrY2LZcS5WkmgNs",
-        secret_key="MW1OYWI3iTDetxpU6WjjV4PZBk5FCvRl",
+        
         region="ap-beijing"
     ))
