@@ -2,12 +2,12 @@ from tencentcloud.common import credential
 from tencentcloud.tmt.v20180321 import tmt_client, models
 from tencentcloud.common.exception.tencent_cloud_sdk_exception import TencentCloudSDKException
 
-def tencent_trans(text: str, source_lang: str = 'auto', target_lang: str = None, secret_id: str = None, secret_key: str = None, region: str = 'ap-beijing') -> str:
+def tencent_trans(text: str, source_lang: str = 'auto', target_lang: str = 'auto', secret_id: str = None, secret_key: str = None, region: str = 'ap-beijing') -> str:
     # 初始化连接
     cred = credential.Credential(secret_id, secret_key)
     
     # 自动检测目标语言：中英互译
-    if target_lang is None and source_lang == 'auto':
+    if target_lang == 'auto' and source_lang == 'auto':
         # 检测语言请求
         source_lang_req = models.LanguageDetectRequest()
         source_lang_req.Text = text

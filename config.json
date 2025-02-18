@@ -1,0 +1,9 @@
+{
+  "trans_type": "tencent_trans",
+  "source_lang": "auto",
+  "target_lang": "auto",
+
+  "model_trans.model_name": "Qwen2.5:1.5b",
+  "tencent_trans.secret_id": "",
+  "tencent_trans.secret_key": ""
+}
