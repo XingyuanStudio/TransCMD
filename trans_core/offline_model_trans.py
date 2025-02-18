@@ -1,7 +1,7 @@
 import ollama
 
 
-def trans_text(text: str, model_name: str, original_language: str = None, target_language: str = None, more_examples: list = None) -> str:
+def model_trans(text: str, model_name: str, original_language: str = None, target_language: str = None, more_examples: list = None) -> str:
     """
     翻译文本
     Args:
@@ -96,9 +96,9 @@ def trans_text(text: str, model_name: str, original_language: str = None, target
     return response.message.content
 
 if __name__ == "__main__":
-    print(trans_text(
-        r"Hello, world!", 
+    print(model_trans(
+        r"在线翻译，使用第三方API接口", 
         "Qwen2.5:1.5b",
-        target_language="拉丁语.Latin.Lingua Latina"
+        target_language="英语.En.English"  # 格式：语言(源语言).Language(语言名称简写代码).Language Name(目标语言)
         ))
     
